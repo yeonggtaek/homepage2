@@ -1,0 +1,21 @@
+.designGoals {
+  display: flex;
+  font-size: var(--font-h2);
+  align-items: center;
+  gap: 80px;
+}
+
+.loop {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.loop p:first-child {
+  color: var(--light-gray);
+}
+
+.photo1 {
+  width: 200px;
+  height: 200px;
+}

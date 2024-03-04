@@ -1,11 +1,11 @@
 :root {
   --black: #000;
   --light-gray: #bcbbbb;
-  --blue: #003C71;
+  --blue: #003c71;
   --blue-rgb: rgb(0, 60, 113);
-  --yellow: #FFF400;
+  --yellow: #fff400;
   --yellow-rgb: rgb(255, 244, 0);
-  --transparent: rgba(0,0,0,0);
+  --transparent: rgba(0, 0, 0, 0);
   --scrollbar-color: rgba(0, 0, 0, 0.3);
   --white-text: #fff;
 
@@ -15,4 +15,8 @@
   --font-h2-tablet: 2rem;
   --font-medium: 1.5em;
   --font-regular: 1em;
+}
+
+body {
+  width: 100vw;
 }

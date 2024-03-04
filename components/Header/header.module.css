@@ -1,67 +1,85 @@
 .header {
-    justify-content: space-between;
-    display: flex;
-  
-    @media (min-width: 1121px) {
-      padding: 80px;
-    }
-  
-    /* Tablet */
-    @media (min-width: 701px) and (max-width: 1120px) {
-      padding: 40px;
-      height: 100px;
-    }
-  
-    /* Mobile */
-    @media (max-width: 700px) {
-      padding: 10px;
-      height: 80px;
-    }
-  }
-  
-  
-  .nav {
-    justify-content: left;
-    @media (min-width: 1121px) {
-      font-size: 1.5rem;
-    }
-  }
-  
-  .navList {
-    display: flex;
-    flex-direction: row;
-    width: 200px;
-    justify-content: space-between;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    color: black;
-    text-align: left;
+  justify-content: flex-start;
+  display: flex;
+  gap: 30px;
+  font-size: var(--font-regular);
+  align-items: center;
 
-  
-    @media (min-width: 1121px) {
-      width: 400px;
-    }
+  @media (min-width: 1121px) {
+    padding: 40px 80px;
   }
-  
-  .navList:hover{
-    cursor: pointer;
+
+  /* Tablet */
+  @media (min-width: 701px) and (max-width: 1120px) {
+    padding: 40px 80px;
+    height: 100px;
+    font-size: var(--font-medium);
   }
-  
-  .logo {
-    width: 60px;
-    height: 60px;
-    @media (min-width: 1121px) {
-      width: 100px;
-      height: 100px;
-    }
+
+  /* Mobile */
+  @media (max-width: 700px) {
+    padding: 10px 60px;
+    height: 80px;
   }
-  
-  .bar {
-    width: 60px;
-    height: 40px;
-    @media (min-width: 1121px) {
-      width: 100px;
-      height: 80px;
-    }
+}
+
+.nav {
+  justify-content: left;
+  flex: 1;
+}
+
+.navList {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  color: var(--black);
+  text-align: left;
+  gap: 40px;
+  @media (max-width: 700px) {
+    display: none;
   }
+}
+
+.navList:hover {
+  cursor: pointer;
+}
+
+.navList li a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+.navList .active a {
+  text-decoration: underline;
+  text-decoration-color: var(--yellow);
+  text-decoration-thickness: 5px;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  @media (min-width: 1121px) {
+    width: 74px;
+    height: 74px;
+  }
+}
+
+.bar {
+  @media (min-width: 1121px) {
+    width: 50px;
+    height: 16px;
+  }
+
+  /* Tablet */
+  @media (min-width: 701px) and (max-width: 1120px) {
+    width: 50px;
+    height: 16px;
+  }
+
+  @media (max-width: 700px) {
+    width: 50px;
+    height: 16px;
+  }
+}

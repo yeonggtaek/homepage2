@@ -1,0 +1,41 @@
+.about {
+}
+
+.section1 {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-start;
+}
+
+.section1 div {
+  width: 30%;
+}
+
+.section1 h1 {
+  width: 630px;
+  z-index: 2;
+  position: relative;
+}
+
+.section1 p {
+  font-size: var(--font-medium);
+  text-align: right;
+}
+
+.section1 a {
+  background: none;
+  border: 3px solid var(--yellow);
+  font-size: var(--font-medium);
+  padding: 6px 12px;
+  color: var(--black);
+  text-decoration: none;
+}
+
+.imgCampus {
+  width: 50%;
+}
+
+.designgoalsContainer {
+  display: flex;
+  justify-content: center;
+}

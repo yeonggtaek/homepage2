@@ -3,7 +3,6 @@ import Header from "@/components/Header/header";
 import HeadArea from "@/components/Headarea/headarea";
 import Footer from "@/components/Footer/footer";
 import Link from "next/link";
-import Button from "@/components/Button/button";
 
 export default function Home() {
   const title = "Home";
@@ -21,7 +20,7 @@ export default function Home() {
               Different than a college or university, the British Columbia
               Istitute of Technology offers practice experience.
             </p>
-            <Button href="/about">About</Button>
+            <Link href="/About">About</Link>
           </div>
           <img
             className={styles.imgCampus}

@@ -17,11 +17,11 @@ export default function Header() {
           <li className={router.pathname === "/" ? styles.active : ""}>
             <Link href="/">Home</Link>
           </li>
-          <li className={router.pathname === "/about" ? styles.active : ""}>
-            <Link href="/about">About</Link>
+          <li className={router.pathname === "/About" ? styles.active : ""}>
+            <Link href="/About">About</Link>
           </li>
-          <li className={router.pathname === "/contact" ? styles.active : ""}>
-            <Link href="/contact">Contact Us</Link>
+          <li className={router.pathname === "/Contact" ? styles.active : ""}>
+            <Link href="/Contact">Contact Us</Link>
           </li>
         </ul>
       </nav>

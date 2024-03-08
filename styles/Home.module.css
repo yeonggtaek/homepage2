@@ -105,7 +105,8 @@
 
 .welcome2 div {
   display: flex;
-  width: 100%;
+  width: 105%;
+  justify-content: center;
 
   /* tablet */
   @media (min-width: 701px) and (max-width: 1120px) {
@@ -122,8 +123,8 @@
 }
 
 .imgCampus2 {
-  width: 20%;
-  height: 15%;
+  width: 12%;
+  transform: scaleX(-1);
 
   /* tablet */
   @media (min-width: 701px) and (max-width: 1120px) {
@@ -140,9 +141,9 @@
 }
 
 .welcome2 h2 {
-  width: 300px;
+  width: 400px;
   position: relative;
-  text-align: center;
+
   font-size: var(--font-h2);
 
   /* tablet */
@@ -160,7 +161,8 @@
 .welcome2 p {
   font-size: var(--font-regular);
   text-align: right;
-
+  width: 180px;
+  
   /* Mobile */
   @media (max-width: 700px) {
     text-align: center;
@@ -170,7 +172,7 @@
 }
 
 .photo1 {
-  width: 6%;
+  width: 5%;
   height: 8%;
 
   @media (min-width: 701px) and (max-width: 1120px) {
@@ -183,3 +185,7 @@
   }
 }
 
+.Link:hover {
+  cursor: pointer;
+  background: var(--yellow);
+}

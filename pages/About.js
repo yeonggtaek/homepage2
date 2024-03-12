@@ -7,8 +7,8 @@ import DesignGoals from "@/components/DesignGoals/designgoals";
 export default function About() {
   return (
     <>
-      <HeadArea />
-      <Header />
+      <HeadArea/>
+      <Header/>
       <main className={`${styles.about}`}>
         <section className={styles.section1}>
           <img
@@ -19,16 +19,15 @@ export default function About() {
           <div>
             <h1>About</h1>
             <p>
-              Different than a college or university, the British Columbia
-              Istitute of Technology offers practice experience.
+              We offer pracical career credentials designed for the workplace, from diplomas and certificates to bachelor's and master's degrees
             </p>
           </div>
         </section>
         <section className={styles.designgoalsContainer}>
-          <DesignGoals />
+          <DesignGoals/>
         </section>
       </main>
-      <Footer />
+      <Footer/>
     </>
   );
 }

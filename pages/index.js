@@ -20,7 +20,7 @@ export default function Home() {
               Different than a college or university, the British Columbia
               Istitute of Technology offers practice experience.
             </p>
-            <Link href="/About">About</Link>
+            <Link href="/About" className={styles.Link}>About</Link>
           </div>
           <img
             className={styles.imgCampus}
@@ -30,20 +30,18 @@ export default function Home() {
         </section>
         <section className={styles.welcome2}>
           <div>
-          <img
-            className={styles.imgCampus2}
-            src="/photo2.jpg"
-            alt="photo2"
-          />
-            <h2>Ready to apply</h2>
-            <p>
-             Your tuition depends on the type of program you enter.
-            </p>
-            <img
-            className={styles.photo1}
-            src="/photo1.jpg"
-            alt="photo1.jpg"
-          />
+            <img className={styles.imgCampus2} src="/photo2.jpg" alt="photo2" />
+            <div className={styles.right}>
+              <h2>Ready to apply?</h2>
+              <p>Your tuition depends on the type of program you enter.</p>
+              <div className={styles.photo1Wrap}>
+                <img
+                  className={styles.photo1}
+                  src="/photo1.jpg"
+                  alt="photo1.jpg"
+                />
+              </div>
+            </div>
           </div>
         </section>
       </main>

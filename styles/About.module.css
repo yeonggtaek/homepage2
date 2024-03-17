@@ -5,16 +5,28 @@
   display: flex;
   gap: 20px;
   justify-content: flex-start;
+
+  @media (min-width: 701px) and (max-width: 1120px) {
+    width: 140%;
+    justify-content: center;
+    }
 }
 
 .section1 div {
   width: 30%;
+
 }
 
 .section1 h1 {
   width: 630px;
   z-index: 2;
   position: relative;
+
+  @media (min-width: 701px) and (max-width: 1120px) {
+    width: 140%;
+    flex-direction: column;
+    position: static;
+    }
 }
 
 .section1 p {
@@ -33,6 +45,7 @@
 
 .imgCampus {
   width: 50%;
+
 }
 
 .designgoalsContainer {

@@ -21,8 +21,10 @@ export default function DesignGoals() {
     <div className={styles.designGoals}>
       <p>3 Good Design Goals</p>
       <div className={styles.loop}>
-        <p>{goalIndex + 1}.</p>
-        <p>{designGoals[goalIndex]}</p>
+        <div className={styles.loopTitle}>
+          <p>{goalIndex + 1}.</p>
+          <p>{designGoals[goalIndex]}</p>
+        </div>
         <img className={styles.photo1} src="/photo1.jpg" alt="photo1" />
       </div>
     </div>

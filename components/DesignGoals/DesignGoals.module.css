@@ -3,15 +3,47 @@
   font-size: var(--font-h2);
   align-items: center;
   gap: 80px;
+  @media (min-width: 701px) and (max-width: 1120px) {
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 40px;
+    margin-bottom: 120px;
+  }
+
+  /* Mobile */
+  @media (max-width: 700px) {
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 40px;
+    margin-bottom: 120px;
+    font-size: var(--font-h2-tablet);
+  }
+}
+
+.designGoals p {
+  margin: 0;
 }
 
 .loop {
   display: flex;
   align-items: center;
+  gap: 40px;
+  @media (min-width: 701px) and (max-width: 1120px) {
+    flex-direction: column;
+  }
+
+  /* Mobile */
+  @media (max-width: 700px) {
+    flex-direction: column;
+  }
+}
+
+.loopTitle {
+  display: flex;
   gap: 20px;
 }
 
-.loop p:first-child {
+.loopTitle p:first-child {
   color: var(--light-gray);
 }
 

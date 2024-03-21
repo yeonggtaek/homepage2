@@ -8,10 +8,9 @@ export default function Header() {
   const router = useRouter();
   const showMenu = () => {
     setIsShowMenu(true);
+    hideMenu(false);
   };
-  const hideMenu = () => {
-    setIsShowMenu(false);
-  };
+
   return (
     <header className={styles.header}>
       <img

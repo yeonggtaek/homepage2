@@ -37,7 +37,7 @@ export default function Contact() {
     return myEmail.test(text);
   };
   const onClickSubmit = () => {
-    setIsSubmit(!isSubmit);
+    setIsSubmit(true);
   };
 
   return (

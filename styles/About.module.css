@@ -7,31 +7,61 @@
   justify-content: flex-start;
 
   @media (min-width: 701px) and (max-width: 1120px) {
-    width: 140%;
     justify-content: center;
-    }
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 80px;
+  }
+
+  /* Mobile */
+  @media (max-width: 700px) {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 80px;
+  }
 }
 
 .section1 div {
   width: 30%;
+  @media (min-width: 701px) and (max-width: 1120px) {
+    width: 100%;
+  }
 
+  /* Mobile */
+  @media (max-width: 700px) {
+    width: 100%;
+  }
 }
 
 .section1 h1 {
   width: 630px;
   z-index: 2;
   position: relative;
+  font-size: var(--font-h1);
+  left: -100px;
 
   @media (min-width: 701px) and (max-width: 1120px) {
-    width: 140%;
-    flex-direction: column;
-    position: static;
-    }
+    left: auto;
+  }
+
+  /* Mobile */
+  @media (max-width: 700px) {
+    width: auto;
+    left: auto;
+    font-size: var(--font-h1-tablet);
+  }
 }
 
 .section1 p {
   font-size: var(--font-medium);
   text-align: right;
+
+  /* Mobile */
+  @media (max-width: 700px) {
+    font-size: var(--font-regular);
+    text-align: left;
+  }
 }
 
 .section1 a {
@@ -45,7 +75,14 @@
 
 .imgCampus {
   width: 50%;
+  @media (min-width: 701px) and (max-width: 1120px) {
+    width: 100%;
+  }
 
+  /* Mobile */
+  @media (max-width: 700px) {
+    width: 100%;
+  }
 }
 
 .designgoalsContainer {
